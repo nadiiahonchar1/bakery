@@ -1,0 +1,103 @@
+:root {
+  --color-primary-light: #faf4ea;
+  --color-primary-dark: #31261a;
+  --color-brand: #819b57;
+  --color-brand-dark: #465929;
+  --color-secondary-dark: #a18268;
+  --color-secondary-light: #cfcfbc;
+}
+
+ul {
+  list-style-type: none;
+}
+
+body {
+  color: var(--color-primary-dark);
+}
+
+.link {
+  font-size: 18px;
+  font-weight: 400;
+  color: var(--color-primary-light);
+}
+
+.link:active,
+.link:hover,
+.link:focus {
+  color: var(--color-brand);
+  font-weight: 600;
+}
+
+.button {
+  width: 238px;
+  height: 59px;
+  padding: 16px 32px;
+  border-radius: 8px;
+  border: 2px solid var(--color-brand);
+  background-color: var(--color-brand);
+  font-size: 18px;
+  font-weight: 600;
+  color: var(--color-primary-light);
+  cursor: pointer;
+}
+
+.button:active,
+.button:hover,
+.button:focus {
+  background-color: transparent;
+  color: var(--color-brand-dark);
+}
+
+.hero-title {
+  font-size: 128px;
+  font-weight: 900;
+  color: var(--color-primary-light);
+}
+
+.hero-title .accent,
+section .accent {
+  color: var(--color-brand);
+}
+
+.toUppercase {
+  text-transform: uppercase;
+}
+
+.section-title .accent {
+  color: var(--color-brand-dark);
+}
+
+.advantages-list {
+  display: flex;
+  justify-content: space-between;
+  padding: 16px 99px;
+  background-color: var(--color-brand);
+  font-size: 20px;
+  font-weight: 300;
+  color: var(--color-primary-light);
+}
+
+.section-title {
+  font-size: 64px;
+  font-weight: 900;
+  line-height: 1.31;
+}
+
+.formats-section article {
+  font-size: 24px;
+  font-weight: 600;
+  color: var(--color-primary-light);
+}
+
+.formats-section p {
+  font-size: 14px;
+  font-weight: 300;
+}
+
+footer a {
+  color: var(--color-primary-light);
+}
+
+footer p {
+  color: var(--color-secondary-dark);
+}
