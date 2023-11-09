@@ -1,3 +1,40 @@
+/* poppins-300 - latin */
+@font-face {
+  font-display: swap;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 300;
+  src: url('../fonts/poppins-v20-latin-300.woff2') format('woff2'),
+    url('../fonts/poppins-v20-latin-300.ttf') format('truetype');
+}
+/* poppins-regular - latin */
+@font-face {
+  font-display: swap;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../fonts/poppins-v20-latin-regular.woff2') format('woff2'),
+    url('../fonts/poppins-v20-latin-regular.ttf') format('truetype');
+}
+/* poppins-600 - latin */
+@font-face {
+  font-display: swap;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 600;
+  src: url('../fonts/poppins-v20-latin-600.woff2') format('woff2'),
+    url('../fonts/poppins-v20-latin-600.ttf') format('truetype');
+}
+/* poppins-900 - latin */
+@font-face {
+  font-display: swap;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 900;
+  src: url('../fonts/poppins-v20-latin-900.woff2') format('woff2'),
+    url('../fonts/poppins-v20-latin-900.ttf') format('truetype');
+}
+
 :root {
   --color-primary-light: #faf4ea;
   --color-primary-dark: #31261a;
@@ -13,11 +50,15 @@ ul {
 
 body {
   color: var(--color-primary-dark);
+  background-color: var(--color-primary-light);
+
+  font-family: 'Poppins', sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  font-style: normal;
 }
 
 .link {
-  font-size: 18px;
-  font-weight: 400;
   color: var(--color-primary-light);
 }
 
@@ -35,7 +76,6 @@ body {
   border-radius: 8px;
   border: 2px solid var(--color-brand);
   background-color: var(--color-brand);
-  font-size: 18px;
   font-weight: 600;
   color: var(--color-primary-light);
   cursor: pointer;
@@ -89,7 +129,7 @@ section .accent {
   color: var(--color-primary-light);
 }
 
-.formats-section p {
+.format-text {
   font-size: 14px;
   font-weight: 300;
 }
@@ -98,6 +138,23 @@ footer a {
   color: var(--color-primary-light);
 }
 
+.adres-link {
+  font-size: 16px;
+  font-weight: 300;
+}
+
+.adres-link:hover,
+.adres-link:focus,
+.adres-link:active {
+  color: var(--color-brand);
+  font-weight: 600;
+}
+
 footer p {
+  font-size: 14px;
   color: var(--color-secondary-dark);
+}
+
+address {
+  font-style: normal;
 }

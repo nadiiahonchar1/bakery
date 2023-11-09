@@ -4,6 +4,12 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Bakery</title>
+    <!-- <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;900&display=swap"
+      rel="stylesheet"
+    /> -->
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
@@ -87,13 +93,15 @@
             <article>
               <img src="./images/walrus.jpg" alt="Зображення формату Walrus" />
               <h3 lang="en">Walrus</h3>
-              <p>Площа: до 120 м2</p>
-              <p>Меню: розширене меню</p>
-              <p>
-                Штат: 2 продавці-касири, 2 пекарі, 2 помічники пекаря, 2
-                офіціанти-різнороби
-              </p>
-              <p>Посадкові місця: є</p>
+              <div class="format-text">
+                <p>Площа: до 120 м2</p>
+                <p>Меню: розширене меню</p>
+                <p>
+                  Штат: 2 продавці-касири, 2 пекарі, 2 помічники пекаря, 2
+                  офіціанти-різнороби
+                </p>
+                <p>Посадкові місця: є</p>
+              </div>
             </article>
           </li>
           <li>
@@ -103,10 +111,12 @@
                 alt="Зображення формату Horseshoe"
               />
               <h3 lang="en">Horseshoe</h3>
-              <p>Площа: до 25 м2</p>
-              <p>Меню: найпопулярніші позиції меню</p>
-              <p>Штат: 2 продавці-касири, 2 пекарі, 1 помічник пекаря</p>
-              <p>Посадкові місця: відсутні</p>
+              <div class="format-text">
+                <p>Площа: до 25 м2</p>
+                <p>Меню: найпопулярніші позиції меню</p>
+                <p>Штат: 2 продавці-касири, 2 пекарі, 1 помічник пекаря</p>
+                <p>Посадкові місця: відсутні</p>
+              </div>
             </article>
           </li>
           <li>
@@ -116,10 +126,12 @@
                 alt="Зображення формату Handlebar"
               />
               <h3>Handlebar</h3>
-              <p>Площа: до 15 м2</p>
-              <p>Меню: найпопулярніші позиції меню</p>
-              <p>Штат: 1 продавець, 1 пекар, 1 помічник пекаря</p>
-              <p>Посадкові місця: відсутні</p>
+              <div class="format-text">
+                <p>Площа: до 15 м2</p>
+                <p>Меню: найпопулярніші позиції меню</p>
+                <p>Штат: 1 продавець, 1 пекар, 1 помічник пекаря</p>
+                <p>Посадкові місця: відсутні</p>
+              </div>
             </article>
           </li>
         </ul>
@@ -151,20 +163,29 @@
           <img src="./images/logo.svg" alt="Логотип пекарні" />
         </a>
         <ul>
-          <li><a href="#traditions-section">Наші традиції</a></li>
-          <li><a href="#cookers-section">Шеф-кухарі</a></li>
-          <li><a href="#formats-section">Формати</a></li>
-          <li><a href="#contacts-section">Контакти</a></li>
+          <li><a class="link" href="#traditions-section">Наші традиції</a></li>
+          <li><a class="link" href="#cookers-section">Шеф-кухарі</a></li>
+          <li><a class="link" href="#formats-section">Формати</a></li>
+          <li><a class="link" href="#contacts-section">Контакти</a></li>
         </ul>
       </nav>
       <address>
         <ul>
-          <li><a href="tel:+380960000007">+ 38 (096) 000 00 07</a></li>
           <li>
-            <a href="mailto:shopbakery@gmail.com">shopbakery@gmail.com</a>
+            <a class="adres-link" href="tel:+380960000007"
+              >+ 38 (096) 000 00 07</a
+            >
           </li>
           <li>
-            <a href="https://maps.app.goo.gl/7E9DDUXA1wABu7uU9" target="_blank"
+            <a class="adres-link" href="mailto:shopbakery@gmail.com"
+              >shopbakery@gmail.com</a
+            >
+          </li>
+          <li>
+            <a
+              class="adres-link"
+              href="https://maps.app.goo.gl/7E9DDUXA1wABu7uU9"
+              target="_blank"
               >Україна, м. Київ, вул. Січових Стрільців 54</a
             >
           </li>
