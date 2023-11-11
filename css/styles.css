@@ -50,7 +50,10 @@
 
 ul {
   list-style-type: none;
+  margin: 0;
+  padding: 0;
 }
+
 a {
   text-decoration: none;
 }
@@ -97,6 +100,26 @@ p {
   padding: 0 24px;
 }
 
+.header-container {
+  display: flex;
+  align-items: center;
+  gap: 64px;
+}
+
+.header-nav {
+  display: flex;
+  align-items: center;
+  flex-grow: 1;
+  gap: 64px;
+}
+
+.header-menu {
+  display: flex;
+  gap: 64px;
+  flex-grow: 1;
+  justify-content: center;
+}
+
 .link {
   color: var(--color-primary-light);
 }
@@ -105,12 +128,10 @@ p {
 .link:hover,
 .link:focus {
   color: var(--color-brand);
-  font-weight: 600;
+  /* font-weight: 600; */
 }
 
 .button {
-  width: 238px;
-  height: 59px;
   padding: 16px 32px;
   border-radius: 8px;
   border: 2px solid var(--color-brand);
@@ -152,14 +173,25 @@ section .accent {
   color: var(--color-brand-dark);
 }
 
+.our-advatages-section {
+  background-color: var(--color-brand);
+}
+
 .advantages-list {
   display: flex;
   justify-content: space-between;
-  padding: 16px 99px;
-  background-color: var(--color-brand);
+  padding: 16px 0;
+  gap: 64px;
+}
+
+.advantages-list li {
   font-size: 20px;
   font-weight: 300;
   color: var(--color-primary-light);
+}
+
+.advantages-list h3 {
+  margin-bottom: 0;
 }
 
 .section-title {
@@ -177,6 +209,20 @@ section .accent {
 .format-text {
   font-size: 14px;
   font-weight: 300;
+}
+
+.traditions-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 64px;
+}
+
+.traditions-content {
+  max-width: 710px;
+}
+
+.traditions-section-text :last-child {
+  max-width: 330px;
 }
 
 footer a {
@@ -226,6 +272,32 @@ address {
 
 .traditions-section-text :not(:last-child) {
   margin-bottom: 42px;
+}
+
+.formats-card {
+  border-radius: 16px;
+  border: #31261a solid 1px;
+
+  background: linear-gradient(
+    180deg,
+    rgba(49, 38, 26, 0) 55.21%,
+    rgba(49, 38, 26, 0.71) 72.92%,
+    #31261a 100%
+  );
+
+  padding: 24px;
+  flex-grow: 1;
+}
+
+.formats-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.formats-item {
+  display: flex;
+  flex-basis: calc((100% - 40px) / 3);
 }
 
 .footer {
