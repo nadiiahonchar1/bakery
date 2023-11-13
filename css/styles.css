@@ -150,6 +150,10 @@ p {
 
 .hero-section {
   padding: 272px 0;
+  background-image: url(../images/couple-in-bakery.jpg);
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-size: cover;
 }
 
 .hero-title {
@@ -262,6 +266,21 @@ address {
 .cookers-section-title,
 .formats-section-title {
   margin-bottom: 80px;
+  text-align: center;
+}
+
+.cookers-section-title {
+  max-width: 540px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.cookers-section-title::before,
+.cookers-section-title::after {
+  display: block;
+  content: '';
+  width: 352px;
+  border: 2px solid var(--color-secondary-light);
 }
 
 .contacts-section-title,
@@ -276,7 +295,7 @@ address {
 
 .formats-card {
   border-radius: 16px;
-  border: #31261a solid 1px;
+  /* border: #31261a solid 1px; */
 
   background: linear-gradient(
     180deg,
@@ -300,6 +319,54 @@ address {
   flex-basis: calc((100% - 40px) / 3);
 }
 
+.cookers-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+.cookers-item {
+  display: flex;
+  flex-basis: calc((100% - 16px) / 2);
+}
+
+.cookers-card {
+  display: flex;
+}
+
+.cookers-img {
+  margin-right: 30px;
+  border-radius: 4px 4px 4px 200px;
+  box-shadow: -16px 16px 0 0 var(--color-primary-light),
+    -16px 16px 0 2px var(--color-secondary-dark);
+}
+
+.contacts-container {
+  display: flex;
+  gap: 32px;
+}
+
+.contaxt-text {
+  flex-basis: calc((100% - 32px) / 2);
+}
+
 .footer {
   padding: 32px 0;
+  flex-grow: 1;
+
+  background-color: var(--color-primary-dark);
+  background-image: url(../images/background-footer.png);
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-size: cover;
+}
+
+.footer-container {
+  display: flex;
+  gap: 166px;
+}
+
+.footer-nav {
+  display: flex;
+  gap: 166px;
 }
