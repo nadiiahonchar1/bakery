@@ -216,7 +216,7 @@ section .accent {
 }
 
 .section-title {
-  font-size: 64px;
+  font-size: 62px;
   font-weight: 900;
   line-height: 1.31;
 }
@@ -553,5 +553,24 @@ address {
 
 .form-term-link {
   color: var(--color-primary-dark);
+  text-decoration: underline;
   text-underline-offset: 2px;
+}
+
+.modal-title {
+  /* color: var(--color-primary-dark); */
+  font-size: 60px;
+  font-weight: 900;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 8px;
+  text-align: center;
+  line-height: 1.31;
+}
+
+.modal-text {
+  font-family: 'Roboto', sans-serif;
+  margin-bottom: 72px;
+  text-align: center;
+  line-height: normal;
 }
