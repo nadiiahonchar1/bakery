@@ -112,7 +112,7 @@ p {
 
 .header-container {
   display: flex;
-  align-items: center;
+  align-items: center;ddre
   gap: 64px;
 }
 
@@ -150,6 +150,7 @@ p {
   font-weight: 600;
   color: var(--color-primary-light);
   cursor: pointer;
+  transition: color 0.3s, background-color 0.3s;
 }
 
 .button:active,
@@ -253,6 +254,7 @@ footer a {
 .adres-link {
   font-size: 16px;
   font-weight: 300;
+  transition: color 0.3s;
 }
 
 .adres-link:hover,
@@ -403,9 +405,10 @@ address {
 
 .address-icon {
   fill: var(--color-primary-light);
+  transition: fill 1.3s;
 }
 
-.address-icon :hover {
+.address-icon:hover {
   fill: var(--color-brand);
 }
 
@@ -422,6 +425,7 @@ address {
   padding: 0;
   flex-shrink: 0;
   cursor: pointer;
+  transition: fill 0.3s, background-color 0.3s;
 }
 
 .carousel-button:hover {
