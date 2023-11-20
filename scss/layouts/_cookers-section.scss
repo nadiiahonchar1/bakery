@@ -1,0 +1,22 @@
+.cookers-section-title {
+  margin-bottom: 80px;
+  text-align: center;
+  position: relative;
+}
+
+.cookers-section-title::before,
+.cookers-section-title::after {
+  content: '';
+  width: 352px;
+  border: 2px solid var(--color-secondary-light);
+  position: absolute;
+  bottom: 24px;
+}
+
+.cookers-section-title::before {
+  left: 0;
+}
+
+.cookers-section-title::after {
+  right: 0;
+}

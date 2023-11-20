@@ -1,0 +1,25 @@
+.contacts-text {
+  margin-bottom: 42px;
+}
+
+.contacts-section-title {
+  margin-bottom: 16px;
+}
+
+.contacts-container {
+  display: flex;
+  gap: 32px;
+}
+
+.contaxt-text {
+  flex-basis: calc((100% - 32px) / 2);
+}
+
+.contacts-section {
+  padding-bottom: 96px;
+}
+
+.maps {
+  border-radius: 16px;
+  overflow: hidden;
+}

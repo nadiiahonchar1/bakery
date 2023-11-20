@@ -1,0 +1,37 @@
+.formats-section article {
+  font-size: 24px;
+  font-weight: 600;
+  color: var(--color-primary-light);
+}
+
+.format-text {
+  font-size: 14px;
+  font-weight: 300;
+}
+
+.formats-section-title {
+  margin-bottom: 80px;
+  text-align: center;
+  position: relative;
+}
+
+.formats-title {
+  margin-bottom: 16px;
+}
+
+.formats-container {
+  display: flex;
+  gap: 32px;
+  align-items: center;
+}
+
+.formats-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.formats-item {
+  display: flex;
+  flex-basis: calc((100% - 40px) / 3);
+}

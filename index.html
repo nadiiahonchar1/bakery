@@ -10,7 +10,7 @@
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;900&display=swap"
       rel="stylesheet"
     /> -->
-    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./css/main.min.css" />
   </head>
   <body>
     <header class="header">
@@ -151,10 +151,11 @@
             <ul class="formats-list">
               <li class="formats-item">
                 <article class="formats-card">
-                  <!-- <img
-                  src="./images/walrus.jpg"
-                  alt="Зображення формату Walrus"
-                /> -->
+                  <img
+                    class="format-image"
+                    src="./images/walrus.jpg"
+                    alt="Зображення формату Walrus"
+                  />
                   <h3 lang="en" class="formats-title">Walrus</h3>
                   <div class="format-text">
                     <p>Площа: до 120 м2</p>
@@ -169,10 +170,11 @@
               </li>
               <li class="formats-item">
                 <article class="formats-card">
-                  <!-- <img
-                  src="./images/horseshoe.jpg"
-                  alt="Зображення формату Horseshoe"
-                /> -->
+                  <img
+                    class="format-image"
+                    src="./images/horseshoe.jpg"
+                    alt="Зображення формату Horseshoe"
+                  />
                   <h3 lang="en" class="formats-title">Horseshoe</h3>
                   <div class="format-text">
                     <p>Площа: до 25 м2</p>
@@ -184,10 +186,11 @@
               </li>
               <li class="formats-item">
                 <article class="formats-card">
-                  <!-- <img
-                  src="./images/handlebar.jpg"
-                  alt="Зображення формату Handlebar"
-                /> -->
+                  <img
+                    class="format-image"
+                    src="./images/handlebar.jpg"
+                    alt="Зображення формату Handlebar"
+                  />
                   <h3 lang="en" class="formats-title">Handlebar</h3>
                   <div class="format-text">
                     <p>Площа: до 15 м2</p>
@@ -223,6 +226,7 @@
                     name="user-name"
                     id="user-name"
                     class="form-input"
+                    required
                   />
                   <label for="user-name" class="form-label">Ім’я</label>
                 </div>
@@ -232,6 +236,8 @@
                     name="user-tel"
                     id="user-tel"
                     class="form-input"
+                    pattern="\+[0-9]{12}"
+                    required
                   />
                   <label for="user-tel" class="form-label">Телефон</label>
                 </div>
@@ -241,6 +247,7 @@
                     name="user-email"
                     id="user-email"
                     class="form-input"
+                    required
                   />
                   <label for="user-email" class="form-label"
                     >Електронна пошта</label
@@ -348,6 +355,9 @@
               name="user-name"
               id="user-name"
               class="form-input"
+              minlength="2"
+              maxlength="20"
+              required
             />
             <label for="user-name" class="form-label">Ім’я</label>
           </div>
@@ -357,6 +367,8 @@
               name="user-tel"
               id="user-tel"
               class="form-input"
+              pattern="\+[0-9]{12}"
+              required
             />
             <label for="user-tel" class="form-label">Телефон</label>
           </div>
@@ -366,9 +378,21 @@
               name="user-email"
               id="user-email"
               class="form-input"
+              required
             />
             <label for="user-email" class="form-label">Електронна пошта</label>
           </div>
+          <!-- <div class="checkbox">
+            <input
+              type="checkbox"
+              class="checkbox-input"
+              id="terms-conditions"
+              name="terms-conditions"
+            />
+            <label for="terms-conditions" class="checkbox-label"
+              >Я точно погоджуюсь з політикою конфіденційності</label
+            >
+          </div> -->
           <button type="submit" class="button form-button">
             Замовити дзвінок
           </button>

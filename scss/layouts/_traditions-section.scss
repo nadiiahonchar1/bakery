@@ -1,0 +1,26 @@
+.traditions-section-text :last-child {
+  max-width: 330px;
+}
+
+.traditions-section {
+  padding-top: 96px;
+}
+
+.traditions-section-title,
+.contacts-text {
+  margin-bottom: 42px;
+}
+
+.traditions-section-text :not(:last-child) {
+  margin-bottom: 42px;
+}
+
+.traditions-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 64px;
+}
+
+.traditions-content {
+  max-width: 710px;
+}

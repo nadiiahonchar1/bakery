@@ -1,0 +1,50 @@
+.footer {
+  padding: 32px 0;
+  flex-grow: 1;
+
+  background-color: var(--color-primary-dark);
+  background-image: url(../images/background-footer.png);
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-size: cover;
+  position: relative;
+}
+
+.footer-container {
+  display: flex;
+  gap: 166px;
+}
+
+.footer-nav {
+  display: flex;
+  gap: 166px;
+}
+
+footer a {
+  color: var(--color-primary-light);
+}
+
+footer p {
+  font-size: 14px;
+  color: var(--color-secondary-dark);
+}
+.footer::before,
+.footer::after {
+  position: absolute;
+  bottom: 0;
+  background-repeat: no-repeat;
+  content: '';
+}
+
+.footer::before {
+  width: 180px;
+  height: 120px;
+  background-image: url(../images/decor-bread-small.png);
+}
+
+.footer::after {
+  width: 380px;
+  height: 190px;
+  right: 0;
+  background-image: url(../images/decor-bread-larg.png);
+}

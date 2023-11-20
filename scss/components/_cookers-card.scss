@@ -1,0 +1,26 @@
+.cookers-list {
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 30px;
+  row-gap: 40px;
+}
+
+.cookers-item {
+  display: flex;
+  flex-basis: calc((100% - 30px) / 2);
+}
+
+.cookers-card {
+  display: flex;
+  gap: 30px;
+}
+
+.cookers-img {
+  border-radius: 4px 4px 4px 200px;
+  box-shadow: -16px 16px 0 0 var(--color-primary-light),
+    -16px 16px 0 2px var(--color-secondary-dark);
+}
+
+.cookers-title {
+  margin-bottom: 16px;
+}
