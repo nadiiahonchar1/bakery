@@ -1,16 +1,23 @@
 .cookers-section-title {
-  margin-bottom: 80px;
+  margin-bottom: 24px;
   text-align: center;
   position: relative;
+  @media screen and (min-width: $bp-desctop) {
+    margin-bottom: 80px;
+  }
 }
 
 .cookers-section-title::before,
 .cookers-section-title::after {
+  display: none;
   content: '';
   width: 352px;
   border: 2px solid var(--color-secondary-light);
   position: absolute;
   bottom: 24px;
+  @media screen and (min-width: $bp-desctop) {
+    display: block;
+  }
 }
 
 .cookers-section-title::before {

@@ -19,19 +19,34 @@
   margin-bottom: 16px;
 }
 
-.formats-container {
+.formats-slider {
   display: flex;
   gap: 32px;
   align-items: center;
 }
 
-.formats-list {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 20px;
+.formats-container {
+  overflow: hidden;
+}
+
+// .formats-list {
+//   display: flex;
+//   flex-wrap: wrap;
+//   gap: 20px;
+// }
+
+.format-section__list {
+  margin-bottom: 32px;
 }
 
 .formats-item {
   display: flex;
   flex-basis: calc((100% - 40px) / 3);
+}
+
+.format-section__button {
+  display: none;
+  @media screen and (min-width: $bp-tablet) {
+    display: flex;
+  }
 }

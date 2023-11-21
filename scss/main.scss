@@ -1,6 +1,14 @@
-@import './base';
-@import './utils/variables';
 @import './utils/fonts';
+@import './utils/variables';
+@import './base';
+
+@import './components/carousel-button';
+@import './components/formats-card';
+@import './components/cookers-card';
+@import './components/buttons';
+@import './components/links';
+@import './components/pagination';
+
 @import './layouts/header';
 @import './layouts/hero-section';
 @import './layouts/our-advatages-section';
@@ -13,8 +21,4 @@
 @import './layouts/section';
 @import './layouts/forms';
 @import './layouts/footer';
-@import './components/carousel-button';
-@import './components/formats-card';
-@import './components/cookers-card';
-@import './components/buttons';
-@import './components/links';
+@import './layouts/mobile-menu';
