@@ -1,26 +1,12 @@
 .link {
   color: var(--color-primary-light);
   transition: color 0.3s;
-}
 
-.link:active,
-.link:hover,
-.link:focus {
-  color: var(--color-brand);
-  /* font-weight: 600; */
-}
-
-.adres-link {
-  font-size: 16px;
-  font-weight: 300;
-  transition: color 0.3s;
-}
-
-.adres-link:hover,
-.adres-link:focus,
-.adres-link:active {
-  color: var(--color-brand);
-  /* font-weight: 600; */
+  &:active,
+  &:hover,
+  &:focus {
+    color: var(--color-brand);
+  }
 }
 
 .form-term-link {
@@ -29,15 +15,17 @@
   text-underline-offset: 2px;
 }
 
-address {
-  font-style: normal;
-}
+.link-mobile-menu {
+  color: var(--color-primary-dark);
+  transition: color 0.3s;
 
-.address-icon {
-  fill: var(--color-primary-light);
-  transition: fill 0.3s;
-}
+  font-size: 14px;
+  line-height: 1;
+  font-weight: 300;
 
-.address-icon:hover {
-  fill: var(--color-brand);
+  &:active,
+  &:hover,
+  &:focus {
+    color: var(--color-brand);
+  }
 }

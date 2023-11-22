@@ -11,13 +11,19 @@
 }
 
 .footer-container {
-  display: flex;
-  gap: 166px;
+  text-align: center;
+  @media screen and (min-width: $bp-desctop) {
+    display: flex;
+    text-align: start;
+    gap: 166px;
+  }
 }
 
 .footer-nav {
-  display: flex;
-  gap: 166px;
+  @media screen and (min-width: $bp-desctop) {
+    display: flex;
+    gap: 166px;
+  }
 }
 
 footer a {
@@ -47,4 +53,52 @@ footer p {
   height: 190px;
   right: 0;
   background-image: url(../images/decor-bread-larg.png);
+}
+
+address {
+  font-style: normal;
+}
+
+.adres-link {
+  font-size: 16px;
+  font-weight: 300;
+  transition: color 0.3s;
+
+  &:hover,
+  &:focus,
+  &:active {
+    color: var(--color-brand);
+  }
+}
+
+.address-icon {
+  fill: var(--color-primary-light);
+  transition: fill 0.3s;
+
+  &:hover {
+    fill: var(--color-brand);
+  }
+}
+
+.footer-logo {
+  @media screen and (max-width: $bp-desctop) {
+    display: block;
+    margin: 0 auto;
+    width: 108px;
+    margin-bottom: 32px;
+  }
+}
+
+.footer-nav li,
+.footer-address-contacts li {
+  @media screen and (max-width: $bp-desctop) {
+    margin-bottom: 18px;
+  }
+}
+
+.privacy-policy a {
+  @media screen and (max-width: $bp-desctop) {
+    display: block;
+    margin-bottom: 8px;
+  }
 }
